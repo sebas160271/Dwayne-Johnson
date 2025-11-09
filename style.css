@@ -1,0 +1,90 @@
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --accent: #eab308;
+  --muted: #94a3b8;
+}
+
+body {
+  font-family: Inter, system-ui, Arial;
+  margin: 0;
+  background: linear-gradient(180deg, #071021 0%, #0b1530 100%);
+  color: #e6eef8;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  font-size: clamp(28px, 4vw, 44px);
+  margin-bottom: 8px;
+}
+
+p.lead {
+  color: var(--muted);
+  margin: 0 0 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 330px;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+figcaption {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+ul {
+  color: #cfe7ff;
+  line-height: 1.6;
+  padding-left: 18px;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 24px 0;
+  margin-top: 30px;
+}
+
+.img-fallback {
+  display: none;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.img-error .img-fallback {
+  display: block;
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
